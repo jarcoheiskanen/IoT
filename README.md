@@ -4,4 +4,4 @@
 
   ![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/Testi.png)
 
-  <h3>12.9.2022 Ryhmätyö (Jerry, Jarco)</h3>
+  <h3>Ryhmätyö (Jerry, Jarco)</h3>
