@@ -6,7 +6,7 @@
 
   <h3>Ryhmätyö (Jerry, Jarco)</h3>
     Aloitettiin Raspberryn asennus, ladattiin Raspberryn asennus SD kortille, siirrettiin ja aukaistiin se toisella läppärillä. Tehtiin tunnukset raspberryyn ja ladatiin päivitykset. Päivityksen jälkeen rebootattiin kone, ja asennus oli valmis. Asennuksen jälkeen aloitettiin tekemään toista asennusta command promptissa, ja tehtiin seuraavasti.
-    #####1. Päivitettiin packages.
+    *1. Päivitettiin packages.
     #####2. Ladattiin apache2.
     #####3. Ladattiin php.
     #####4. Ladattiin mariadb.
