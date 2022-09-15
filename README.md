@@ -13,3 +13,7 @@
     5. Ladattiin php-mysql connector.
     6. Restartattiin apache2.
     8. Testatiin serveriä.
+
+  <h3>15.9.2022</h3>
+  Annettiin tiedoston /var/www/html muokkaukseen lupa, ja vaihdettiin Index.html > Index.php tiedostoksi.
+  Aloitettiin tekemään tietokantaa. Tehtiin tietokantapalvelimeen omat tietokannat (Jarco_SMarket ja Jerry_SMarket), ja molempiin omat taulukot (Jarco_Liike ja Jerry_Liike).
