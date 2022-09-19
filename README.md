@@ -27,7 +27,7 @@
     6. INSERT INTO taulukon nimi (arvo, aika) VALUES (true, now()) on esimerkki miten taulukkoon voi lisätä asioita.
     7. SELECT * FROM taulukon nimi. Näyttää taulukon sisällön.
 
-  <h3>15.9.2022</h3>
+  <h3>19.9.2022</h3>
   Tehtiin liikesensori pelkällä Raspberryllä.
   <details>
     <summary>
