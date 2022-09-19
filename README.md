@@ -33,6 +33,7 @@
     <summary>
       Koodi:
     </summary>
+  
       import time
       import RPi.GPIO as GPIO
       
