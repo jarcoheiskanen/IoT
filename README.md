@@ -34,18 +34,22 @@
       Koodi:
     </summary>
   
+      ## -- Lisää libraryt koodiin
       import time
       import RPi.GPIO as GPIO
       
+      ## -- Lisää variablet, ja aloittaa setupin GPIO:on
       pin = 4
       GPIO.setmode(GPIO.BCM)
       GPIO.setup(pin, GPIO.IN)
       
+      ## -- Function, joka hakee ajan.
       def getTime():
         result = time.localtime()
         time_string = time.strftime("%m/%d&%y/, %H:%M:%S:", result)
         return time_string
         
+      ## -- Kokeilee jos koodissa on virheitä, jos ei se aloittaa loopin joka ei lopu koskaan.
       try:
         while True:
           timeResult = getTime()
