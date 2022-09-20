@@ -64,8 +64,74 @@
   </details>
   
   <h3>20.9.2022</h3>
-  <b>EEPROM</b>: Lyhenne sanoista "Electrically erasable programmable read-only memory" ja on eräänlainen tietokoneissa käytettävä haihtumaton muisti.<br />
-  <b>UART</b>: Universal asynchronous receiver/transmitter. Tietokonelaite asynkroniseen sarjantaviestintään, jossa datamuoto ja lähetysnopeudet ovat konfiguroitavisssa.<br />
-  <b>I2C</b>: Synkroninen moniohjain pakettikytkentäinen yksipäinen sajraviestintäväylä, jonka Philips Semiconductors keksi vuonna 1982.<br />
+  <b>EEPROM</b>: Lyhenne sanoista "Electrically erasable programmable read-only memory" ja on muistimoduuli circuit moduulissa. Löytyy arduinosta.<br />
+  
+  <b>UART</b>: Universal asynchronous receiver/transmitter. Protokolla tarkoittaa sarjaliikenteen, joka tapahtuu kahdella linjalla tai digitaalisella nastalla, jotka ovat RX (nasta0) ja TX (nasta1). Arduino sisältää USB-sarjamuntimen, jonka avulla mikro-ohjain alijärjetelmä voi olla suoraan yhteydessä tietokoneeseen (esim. raspberry PI:hin)<br />
+  
+  <b>I2C</b>: Synkroninen moniohjain pakettikytkentäinen yksipäinen sajraviestintäväylä. <br />
+  
   <b>SIP</b>: Session Initiation Protocol. Käytetään ääni-, ja video- ja viestintäsovelluksia sisältävien viestintätuntojen aloittamiseen, ylläpitoon ja lopettamiseen.<br />
+  
   <b>Mitä eroa on I2C ja SIP:llä?</b>: SIP on monikäyttöisempi kuin I2C.<br />
+
+  <details>
+    <summary>
+      Lista:
+    </summary>
+  
+      apt-get update
+      clear
+      date
+      find / -name esimerkki.txt
+      nano example.txat
+      poweroff
+      raspi-confg
+      reboot
+      shutdown -h now
+      shutdown -h 01:22:
+      startx
+      
+      cat esimerkki.txt
+      cd/abc/xyz
+      ls -l
+      mkdir esimerkki:_polku
+      mv XXX
+      rm esimerkki.txt
+      scp user@10.0.0.32:/some/path/tiedosto.txt
+      touch example.txt
+      
+      ifconfig
+      iwconfig
+      iwlist wlan0 scan
+      iwlist wlan0 | grep ESSID
+      nmap
+      ping
+      wget https://www.website.com/example.txt
+      
+      
+      cat /proc/meminfo
+      cat /proc/partitions
+      cat /proc/version
+      df -h
+      df /
+      dpkg - -get-selections | grep XXX
+      dpkg - -get-selections
+      free
+      hostname -l
+      lsusb
+      UP key
+      vcgencmd measure_temp
+      vcgencmd get_mem arm && vcgencmd get_mem gpu
+      
+  </details>
+  
+  <details>
+    <summary>
+      Tehtävä:
+    </summary>
+  
+      Raspberryn lämpötila: $ vcgencmd measure_temp
+      Kuinka paljon vapaata tilaa on jäljellä: $ df -Bm
+      Miten vaihdetaan polusta toiseen: $ cd ~
+  
+  </details>
