@@ -63,9 +63,9 @@
         GPIO.cleanup()
   </details>
   
-  <h3>20.9.2022</h3>
-  <b>EEPROM</b>: Lyhenne sanoista "Electrically erasable programmable read-only memory" ja on eräänlainen tietokoneissa käytettävä haihtumaton muisti.
-  <b>UART</b>: Universal asynchronous receiver/transmitter. Tietokonelaite asynkroniseen sarjantaviestintään, jossa datamuoto ja lähetysnopeudet ovat konfiguroitavisssa.
-  <b>I2C</b>: Synkroninen moniohjain pakettikytkentäinen yksipäinen sajraviestintäväylä, jonka Philips Semiconductors keksi vuonna 1982.
-  <b>SIP</b>: Session Initiation Protocol. Käytetään ääni-, ja video- ja viestintäsovelluksia sisältävien viestintätuntojen aloittamiseen, ylläpitoon ja lopettamiseen.
-  <b>Mitä eroa on I2C ja SIP:llä?</b>: SIP on monikäyttöisempi kuin I2C.
+  *<h3>20.9.2022</h3>
+  *<b>EEPROM</b>: Lyhenne sanoista "Electrically erasable programmable read-only memory" ja on eräänlainen tietokoneissa käytettävä haihtumaton muisti.
+  *<b>UART</b>: Universal asynchronous receiver/transmitter. Tietokonelaite asynkroniseen sarjantaviestintään, jossa datamuoto ja lähetysnopeudet ovat konfiguroitavisssa.
+  *<b>I2C</b>: Synkroninen moniohjain pakettikytkentäinen yksipäinen sajraviestintäväylä, jonka Philips Semiconductors keksi vuonna 1982.
+  *<b>SIP</b>: Session Initiation Protocol. Käytetään ääni-, ja video- ja viestintäsovelluksia sisältävien viestintätuntojen aloittamiseen, ylläpitoon ja lopettamiseen.
+  *<b>Mitä eroa on I2C ja SIP:llä?</b>: SIP on monikäyttöisempi kuin I2C.
