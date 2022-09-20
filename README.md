@@ -64,6 +64,7 @@
   </details>
   
   <h3>20.9.2022</h3>
+  
   <b>EEPROM</b>: Lyhenne sanoista "Electrically erasable programmable read-only memory" ja on muistimoduuli circuit moduulissa. Löytyy arduinosta.<br />
   
   <b>UART</b>: Universal asynchronous receiver/transmitter. Protokolla tarkoittaa sarjaliikenteen, joka tapahtuu kahdella linjalla tai digitaalisella nastalla, jotka ovat RX (nasta0) ja TX (nasta1). Arduino sisältää USB-sarjamuntimen, jonka avulla mikro-ohjain alijärjetelmä voi olla suoraan yhteydessä tietokoneeseen (esim. raspberry PI:hin)<br />
