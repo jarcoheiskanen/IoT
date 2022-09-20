@@ -79,49 +79,49 @@
       Lista:
     </summary>
   
-      apt-get update
-      clear
-      date
-      find / -name esimerkki.txt
-      nano example.txat
-      poweroff
-      raspi-confg
-      reboot
-      shutdown -h now
-      shutdown -h 01:22:
-      startx
+      apt-get update: Hakee päivityksen
+      clear: Tyhjentää terminaalin
+      date: Näyttää päivämäärän ja ajan
+      find / -name esimerkki.txt: Etsii nimellä tietokoneesta tiedostoa.
+      nano example.txt: Voi kontrolloida tiedostoa
+      poweroff: Sammuttaa koneen
+      raspi-confg: Aukaisee raspin configuration työkalun
+      reboot: Uudelleen aukaisee koneen
+      shutdown -h now: Sulkeutuu asettaman ajan päästä
+      shutdown -h 01:22: Sulkeutuu 01:22
+      startx: Aloittaa server X
       
-      cat esimerkki.txt
-      cd/abc/xyz
-      ls -l
-      mkdir esimerkki:_polku
-      mv XXX
-      rm esimerkki.txt
-      scp user@10.0.0.32:/some/path/tiedosto.txt
-      touch example.txt
+      cat esimerkki.txt: Aukaista tai tehdä tiedosto
+      cd/abc/xyz: Path directory
+      ls -l: Listaa sovellukset
+      mkdir esimerkki:_polku: Tekee directoryn
+      mv XXX: ei ole komento
+      rm esimerkki.txt: Poistaa tiedoston
+      scp user@10.0.0.32:/some/path/tiedosto.txt: Kopioi tiedostoja kahden paikan välillä
+      touch example.txt: Muuttaa timestamppiä
       
-      ifconfig
-      iwconfig
-      iwlist wlan0 scan
-      iwlist wlan0 | grep ESSID
-      nmap
-      ping
-      wget https://www.website.com/example.txt
+      ifconfig: Näyttää netin tiedot
+      iwconfig: Langattoman netin tiedot
+      iwlist wlan0 scan: Scannaa langattoman yhteyden
+      iwlist wlan0 | grep ESSID: -
+      nmap: Näytäää mitä serviceitä on auki
+      ping: Näyttää yhteyden ja sen tarkkuuden nettiin
+      wget https://www.website.com/example.txt: Hakee tietoa nettisivusta
       
       
-      cat /proc/meminfo
-      cat /proc/partitions
-      cat /proc/version
-      df -h
-      df /
-      dpkg - -get-selections | grep XXX
-      dpkg - -get-selections
-      free
-      hostname -l
-      lsusb
-      UP key
-      vcgencmd measure_temp
-      vcgencmd get_mem arm && vcgencmd get_mem gpu
+      cat /proc/meminfo: Memoryn info
+      cat /proc/partitions: Näyttää väliseinät
+      cat /proc/version: Näyttää versiot
+      df -h: Näyttää paljon tilaa on jäljellä
+      df /: Näyttää tilaa tietyllä systeemillä
+      dpkg - -get-selections | grep XXX:              ---- 
+      dpkg - -get-selections                          ----
+      free: Näyttää käytettävän memoryn
+      hostname -l                                     ----
+      lsusb: Näyttää tietoja USB laitteista
+      UP key: Näyttää aikaisemmat syötetyt komennot terminaaliin
+      vcgencmd measure_temp: Näyttää koneen lämpötilan
+      vcgencmd get_mem arm && vcgencmd get_mem gpu: Arm Memoryn käyttö ja GPU memoryn käyttö
       
   </details>
   
