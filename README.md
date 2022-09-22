@@ -143,17 +143,19 @@
   
    <details>
     <summary>
-      Testit:
+      Tehtävä 1:
     </summary>
   
       #1. Tietokanta (10min)
         - A) Kun olet palvelimen sisällä, voit käyttää komentoa "$ SHOW DATABASES;" terminaalissa. (Näyttää kaikki tietokannat palvelimen sisältä)
         - B) Kun olet tietokannan sisällä, voit käyttää komentoa "$ DESC listanNimi;". (Näyttää kaikki tiedot taulukosta)
-
+    </summary>
+   </details>
+   
       #2. String + muuttuja-harjoitus (30min)
         <details>
           <summary>
-            Koodi:
+            Tehtävä 2:
           </summary>
             import time
             import datetime
@@ -201,5 +203,4 @@
       
       #3. DHTII -harjoitus (1,5h)
         - A) 
-             
-  </details>
+
