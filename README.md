@@ -136,3 +136,70 @@
       Miten vaihdetaan polusta toiseen: $ cd ~
   
   </details>
+
+  <h3>22.9.2022 Testi</h3>
+  
+  Tehtiin tunnukset "Ohjelmoinnin perusteet" tehtävä sivuun ja tehtiin niitä tehtäviä.
+  
+   <details>
+    <summary>
+      Testit:
+    </summary>
+  
+      #1. Tietokanta (10min)
+        - A) Kun olet palvelimen sisällä, voit käyttää komentoa "$ SHOW DATABASES;" terminaalissa. (Näyttää kaikki tietokannat palvelimen sisältä)
+        - B) Kun olet tietokannan sisällä, voit käyttää komentoa "$ DESC listanNimi;". (Näyttää kaikki tiedot taulukosta)
+
+      #2. String + muuttuja-harjoitus (30min)
+        <details>
+          <summary>
+            Koodi:
+          </summary>
+            import time
+            import datetime
+            import mariadb
+            import RPi.GPIO as GPIO
+
+
+
+            inputPin = 4
+            sleepTime = 5
+
+
+
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(inputPin, GPIO.IN)
+
+
+
+            conn = mariadb.connect(user="jaje", password="JarcoJerry1", host="localhost", database="SMarket")
+            cur = conn.cursor()
+
+
+
+            try:
+                while True:
+
+                    inputType = GPIO.input(inputPin)
+                    curTime = datetime.datetime.now()
+
+                    #sqlStr = "INSERT INTO Liike (arvo, aika) VALUES({boolean}, '{timeCurrently}')".format(boolean = inputType, timeCurrently = curTime)
+                    #sqlStr = "INSERT INTO Liike (arvo, aika) VALUES(%s, '%s')" % (inputType, curTime)
+                    sqlStr = f"INSERT INTO Liike (arvo, aika) VALUES({inputType}, '{curTime}')"
+
+                    print(sqlStr)
+                    cur.execute(sqlStr)
+                    conn.commit()
+
+                    time.sleep(sleepTime)
+
+            except:
+                print("Ei toimi")
+
+            conn.close()
+        </details>
+      
+      #3. DHTII -harjoitus (1,5h)
+        - A) 
+             
+  </details>
