@@ -199,8 +199,8 @@
              print("Ei toimi")
 
          conn.close()
-     </details>
+  </details>
       
   #3. DHTII -harjoitus (1,5h)
-       - A) 
+    - A) 
 
