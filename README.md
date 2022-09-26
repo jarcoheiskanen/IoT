@@ -152,54 +152,54 @@
     </summary>
    </details>
    
-      #2. String + muuttuja-harjoitus (30min)
-        <details>
-          <summary>
-            Tehtävä 2:
-          </summary>
-            import time
-            import datetime
-            import mariadb
-            import RPi.GPIO as GPIO
+   #2. String + muuttuja-harjoitus (30min)
+     <details>
+       <summary>
+         Tehtävä 2:
+       </summary>
+         import time
+         import datetime
+         import mariadb
+         import RPi.GPIO as GPIO
 
 
 
-            inputPin = 4
-            sleepTime = 5
+         inputPin = 4
+         sleepTime = 5
 
 
 
-            GPIO.setmode(GPIO.BCM)
-            GPIO.setup(inputPin, GPIO.IN)
+         GPIO.setmode(GPIO.BCM)
+         GPIO.setup(inputPin, GPIO.IN)
 
 
 
-            conn = mariadb.connect(user="jaje", password="JarcoJerry1", host="localhost", database="SMarket")
-            cur = conn.cursor()
+         conn = mariadb.connect(user="jaje", password="JarcoJerry1", host="localhost", database="SMarket")
+         cur = conn.cursor()
 
 
 
-            try:
-                while True:
+         try:
+             while True:
 
-                    inputType = GPIO.input(inputPin)
-                    curTime = datetime.datetime.now()
+                 inputType = GPIO.input(inputPin)
+                 curTime = datetime.datetime.now()
 
-                    #sqlStr = "INSERT INTO Liike (arvo, aika) VALUES({boolean}, '{timeCurrently}')".format(boolean = inputType, timeCurrently = curTime)
-                    #sqlStr = "INSERT INTO Liike (arvo, aika) VALUES(%s, '%s')" % (inputType, curTime)
-                    sqlStr = f"INSERT INTO Liike (arvo, aika) VALUES({inputType}, '{curTime}')"
+                 #sqlStr = "INSERT INTO Liike (arvo, aika) VALUES({boolean}, '{timeCurrently}')".format(boolean = inputType, timeCurrently = curTime)
+                 #sqlStr = "INSERT INTO Liike (arvo, aika) VALUES(%s, '%s')" % (inputType, curTime)
+                 sqlStr = f"INSERT INTO Liike (arvo, aika) VALUES({inputType}, '{curTime}')"
 
-                    print(sqlStr)
-                    cur.execute(sqlStr)
-                    conn.commit()
+                 print(sqlStr)
+                 cur.execute(sqlStr)
+                 conn.commit()
 
-                    time.sleep(sleepTime)
+                 time.sleep(sleepTime)
 
-            except:
-                print("Ei toimi")
+         except:
+             print("Ei toimi")
 
-            conn.close()
-        </details>
+         conn.close()
+     </details>
       
       #3. DHTII -harjoitus (1,5h)
         - A) 
