@@ -201,6 +201,6 @@
          conn.close()
      </details>
       
-      #3. DHTII -harjoitus (1,5h)
-        - A) 
+  #3. DHTII -harjoitus (1,5h)
+       - A) 
 
