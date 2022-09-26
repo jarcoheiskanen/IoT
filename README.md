@@ -210,6 +210,7 @@
     <summary>
       DHT11 Koodi
     </summary>
+  
     import time
     import Adafruit_DHT
     import datetime
