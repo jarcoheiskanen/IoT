@@ -246,3 +246,159 @@
         print(error.args[0])
         print("Ei Toimi")
   </details>
+  
+  <h3>29.9.2022</h3>
+  <details>
+    <summary>
+      HTML Sivusto:
+    </summary>
+      <!-- Documentti tyyppi -->
+      <!DOCTYPE html>
+
+
+
+      <html>
+
+        <!-- Headeri -->
+
+        <head>
+          <title>Hälytin</title>
+        </head>
+
+        <body>
+
+          <!-- Siirä data taulukkoon -->
+
+          <div style="
+            box-sizing: border-box;
+            border: 2px solid #969696;
+            border-radius: 5px;
+            background: #fffffff;
+          ">
+            <center>
+
+              <!-- Otsikko -->
+
+              <h1 style="
+                align-left: center;
+                align-right: center;
+                text-align: center;
+                color: rgb(255,55,55);
+                font-family: Courier New;
+              ">HÄLYTIN</h1><br>
+
+              <!-- Ala Otsikko -->
+
+              <img src="images/skul" alt="skull emoj" width=100 height=100><br>
+              <h2 style="font-family: Courier New;">Data:</h2>
+
+
+
+             <!-- PHP -->
+
+
+
+             <?php
+
+                // Laitetaan muuttujat, ja niille arvot.
+
+                $servername = "localhost";
+                $username = "jaje";
+                $password = "JarcoJerry1";
+                $dbname = "SMarket";
+                $conn = new mysqli($servername, $username, $password, $dbname); // Yhteys databaseen
+
+                // Katsotaanko toimiiko yhteys vai ei, jos toimii se jatkaa ohjelmaa, jos ei se antaa sivulle viestin.
+
+                if ($conn->connect_error){
+                  die("😭😭 Connection failed 😭😭" . $conn->connection_error);
+                }
+
+                // Yhteys toimii, joten jatkaa ohjelmaa. Asettaa SQL komennon ja syöttää sen.
+
+                $sql = "SELECT id, arvo FROM Liike ORDER BY -id LIMIT 10";
+                $data = $conn->query($sql);
+
+                // Antaa sivulle kaikki tiedot muuttujan "data" sisältä ja syöttää ne sivulle.
+
+                ?>
+                <table>
+                  <style>
+
+                    table, th, td {
+                      border-radius: 5px;
+                    }
+
+                    table {
+                      border: 1px solid #ccd6dd;
+                      font-family: arial, sans-serif;
+                      width: 25%;
+                    }
+
+
+
+                   td, th {
+                      border: 1px solid #edf7ff;
+                      text-align: left;
+                      padding: 10px;
+                    }
+
+                    tr:nth-child(even) {
+                      border: 1px solid #edf7ff;
+                      background-color: #ccd6dd;
+                    }
+
+
+
+                 </style>
+                    <tr>
+                      <th>id</th>
+                      <th>arvo</th>
+                    </tr>
+                <?php
+                  while($row = $data->fetch_assoc()){
+                    ?>
+                    <tr>
+                      <td><?php echo $row["id"]?></td>
+                      <td><?php echo $row["arvo"]?></td>
+                    </tr>
+                    <?php
+                  }
+                ?>
+                </table>
+                <?php
+
+                // Sulkee yhteyden.
+
+                $conn->close();
+
+
+
+             ?><br>
+
+              <!-- Nappula -->
+
+              <button style="
+                box-sizing: border-box;
+                border: 2px solid #ccd6dd;
+                border-radius: 5px;
+                width: 25%;
+                height: 50px;
+                color: rgb(255,55,55);
+                background: #ffffff;
+                font: bold 5pt Arial;
+                font-family: Courier New;
+                font-size: 24px;
+              ">FREE DOWNLOAD</button>
+
+              <!-- Linkki -->
+
+              <p style="font-family: bold 10pt, Courier New;">Powered by S-Ketju</p>
+              <a href="https://www.s-ryhma.fi">Linkki</a>
+
+            </center><br>
+          </div>
+        </body>
+
+      </html>
+  </details>
