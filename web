@@ -1,0 +1,291 @@
+
+<html>
+    <!-- Headeri -->
+    <head>
+        <title>Hälytin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        .buttonVar {
+            box-sizing: border-box;
+            border: 2px solid #ccd6dd;
+            border-radius: 5px;
+            width: 35%;
+            height: 35px;
+            color: rgb(255,55,55);
+            background: #ffffff;
+            font-weight: bold;
+            font-family: Courier New;
+            font-size: 24px;
+        }
+
+        .answerBox {
+            font-family: Courier New;
+            width: 80%;
+        }
+
+        .answerText {
+            display: block;
+            font-family: Courier New; 
+            font-weight: bold;
+            text-align: left;
+            width: 80%;
+        }
+
+        .active, .buttonVar:hover {
+            background-color: #ccd6dd;
+        }
+
+        .collapsible {
+            background-color: #ffffff;
+            color: #292f33;
+            cursor: pointer;
+            width: 100%;
+            height: 35px;
+            border: 2px solid #ccd6dd;
+            text-align: left;
+            font-size: 15px;
+            font-family: Courier New;
+            font-weight: bold;
+            width: 35%;
+        }
+
+        .active, .collapsible:hover {
+            background-color: rgb(255,55,55);
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: #292f33;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Siirä data taulukkoon -->
+
+        <div style="
+        box-sizing: border-box;
+        border: 2px solid #969696;
+        border-radius: 5px;
+        background: #fffffff;
+        background-image: url('images/testi3.png');
+        ">
+        <center>
+
+            <!-- Otsikko -->
+
+            <h1 style="
+            align-left: center;
+            align-right: center;
+            text-align: center;
+            color: rgb(255,55,55);
+            font-family: Courier New;
+            ">HÄLYTIN</h1><br>
+
+            <!-- Ala Otsikko -->
+
+            <img src="images/skul.png" alt="skull emoj" width=100 height=100><br><br><br>
+
+            <!-- FORM -->
+            <button class="collapsible" style="
+                border: 2px solid #ccd6dd;
+                border-radius: 5px;
+            ">Open Form</button>
+            <div class="content"><br>
+                <form
+                
+                action="https://www.salpaus.fi"
+                method="post"
+                enctype="text/plain"
+                name="asasddsa"
+                
+                style="
+                    box-sizing: border-box;
+                    border: 2px solid #969696;
+                    border-radius: 5px;
+                    background: #fffffff;
+                    width: 35%;
+                    background-image: url('images/testi3.png');
+                ">
+
+                    <h2 style="font-family: Courier New;">Täytä:</h2>
+
+                    <label for="fname" class="answerText">NIMI:</label>
+                    <input type="text" class="answerBox" id="fname" name="fname"><br><br>
+
+                    <label for="cdate" class="answerText">PVM:</label>
+                    <input type="date" class="answerBox"  id="cdate" name="cdate"><br><br>
+
+                    <label for="nikä" class="answerText">IKÄ:</label>
+                    <input type="number" class="answerBox"  id="nikä" name="nikä"><br><br>
+
+                    <label for="tarvitsee" class="answerText">KORTIN NUMERO JA CVI:</label>
+                    <input type="text" class="answerBox"  id="tarvitsee" name="tarvitsee" required><br><br>
+
+                    <label for="info" class="answerText">FEEDBACK:</label>
+                    <textarea rows="20" cols="50" style="font-family: Courier New; width: 80%; height: 100px; resize: none;" id="info" name="info" maxlength="120"></textarea><br><br>
+
+                    <button inline="true" style="
+                        width: 25%;
+                        height: 35px;
+                        background-color: rgb(255, 119, 119);
+                        box-sizing: border-box;
+                        border: 2px solid #969696;
+                        border-radius: 5px;
+                        font-family: Courier New;
+                        font-weight: bold;
+                        margin: 25px;
+                    ">RESET</button>
+
+                    <button type="submit" value="Send" inline="true" style="
+                        width: 25%;
+                        height: 35px;
+                        background-color: lightgreen;
+                        box-sizing: border-box;
+                        border: 2px solid #969696;
+                        border-radius: 5px;
+                        font-family: Courier New;
+                        font-weight: bold;
+                        margin: 25px;
+                    ">LÄHETÄ</button><br>
+                    
+                </form>
+            </div><br>
+
+            <!-- PHP -->
+
+            <button class="collapsible" style="
+                border: 2px solid #ccd6dd;
+                border-radius: 5px;
+            ">Open List</button>
+            <div class="content">
+
+                <!-- Ala Otsikko -->
+
+                <h2 style="font-family: Courier New;">Data:</h2>
+
+                <?php
+
+                // Laitetaan muuttujat, ja niille arvot.
+
+                $servername = "localhost";
+                $username = "jaje";
+                $password = "JarcoJerry1";
+                $dbname = "SMarket";
+                $conn = new mysqli($servername, $username, $password, $dbname); // Yhteys databaseen
+
+                // Katsotaanko toimiiko yhteys vai ei, jos toimii se jatkaa ohjelmaa, jos ei se antaa sivulle viestin.
+
+                if ($conn->connect_error){
+                    die("😭😭 Connection failed 😭😭" . $conn->connection_error);
+                }
+
+                // Yhteys toimii, joten jatkaa ohjelmaa. Asettaa SQL komennon ja syöttää sen.
+
+                $sql = "SELECT id, arvo FROM Liike ORDER BY -id LIMIT 10";
+                $data = $conn->query($sql);
+
+                // Antaa sivulle kaikki tiedot muuttujan "data" sisältä ja syöttää ne sivulle.
+
+                ?>
+                <table>
+                    <style>
+
+                    table, th, td {
+                        border-radius: 5px;
+                    }
+
+                    table {
+                        border: 1px solid #ccd6dd;
+                        font-family: arial, sans-serif;
+                        width: 25%;
+                    }
+
+                    td, th {
+                        border: 1px solid #edf7ff;
+                        text-align: left;
+                        padding: 10px;
+                    }
+
+                    tr:nth-child(even) {
+                        border: 1px solid #edf7ff;
+                        background-color: #ccd6dd;
+                    }
+
+                    </style>
+                    <tr>
+                        <th>id</th>
+                        <th>arvo</th>
+                    </tr>
+                <?php
+                    while($row = $data->fetch_assoc()){
+                    ?>
+                    <tr>
+                        <td><?php echo $row["id"]?></td>
+                        <td><?php echo $row["arvo"]?></td>
+                    </tr>
+                    <?php
+                    }
+                ?>
+                </table>
+                <?php
+
+                // Sulkee yhteyden.
+
+                $conn->close();
+
+                ?><br>
+            </div><br>
+
+            <!-- Nappula -->
+
+            <button class="buttonVar">FREE DOWNLOAD</button><br>
+
+            <!-- Linkki -->
+
+            <video width="320" height="240" controls>
+                <source src="videos/tutorial.mp4" type="video/mp4">
+            </video><br>
+
+            <p style="font-family: bold 10pt, Courier New;">Powered by S-Ketju</p>
+            <a href="https://www.s-ryhma.fi">Linkki</a>
+
+        </center><br>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var buttonVar = document.getElementsByClassName("buttonVar")
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+
+        </div>
+    </body>
+</html>
