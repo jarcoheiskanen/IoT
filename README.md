@@ -14,7 +14,7 @@
     5. Ladattiin php-mysql connector.
     6. Restartattiin apache2.
     8. Testatiin serveriä.
-
+----------------------------------------------------------------------------------------
   <h3>15.9.2022</h3>
   Annettiin tiedoston /var/www/html muokkaukseen lupa, ja vaihdettiin Index.html > Index.php tiedostoksi.
   Aloitettiin tekemään tietokantaa. Tehtiin tietokantapalvelimeen omat tietokannat (Jarco_SMarket ja Jerry_SMarket), ja molempiin omat taulukot (Jarco_Liike ja Jerry_Liike).
@@ -26,7 +26,7 @@
     5. PRAMA TABLE_INFO(taulukon nimi)
     6. INSERT INTO taulukon nimi (arvo, aika) VALUES (true, now()) on esimerkki miten taulukkoon voi lisätä asioita.
     7. SELECT * FROM taulukon nimi. Näyttää taulukon sisällön.
-
+----------------------------------------------------------------------------------------
   <h3>19.9.2022</h3>
   Tehtiin liikesensori pelkällä Raspberryllä.
   <details>
@@ -62,7 +62,7 @@
         print("-")
         GPIO.cleanup()
   </details>
-  
+----------------------------------------------------------------------------------------
   <h3>20.9.2022</h3>
   
   <b>EEPROM</b>: Lyhenne sanoista "Electrically erasable programmable read-only memory" ja on muistimoduuli circuit moduulissa. Löytyy arduinosta.<br />
@@ -136,7 +136,7 @@
       Miten vaihdetaan polusta toiseen: $ cd ~
   
   </details>
-
+----------------------------------------------------------------------------------------
   <h3>22.9.2022 Testi</h3>
   
   Tehtiin tunnukset "Ohjelmoinnin perusteet" tehtävä sivuun ja tehtiin niitä tehtäviä.
@@ -203,7 +203,7 @@
       
   #3. DHTII -harjoitus (1,5h)
     - A) 
-
+----------------------------------------------------------------------------------------
   <h3>26.9.2022</h3>
   
   <details>
@@ -246,7 +246,7 @@
         print(error.args[0])
         print("Ei Toimi")
   </details>
-  
+----------------------------------------------------------------------------------------
   <h3>29.9.2022</h3>
   <details>
     <summary>
