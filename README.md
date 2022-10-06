@@ -402,3 +402,10 @@
 
       </html>
   </details>
+  
+  <h3>6.10.2022</h3>
+  
+    Aloitettiin azure serveri, jolla meidän database toimi.
+    Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komentopaneeliin:
+      - $cd PHPn TIEDOSTO POLKU
+      - $php -S localhost:8000
