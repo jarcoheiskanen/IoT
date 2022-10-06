@@ -407,5 +407,5 @@
   
   Aloitettiin azure serveri, jolla meidän database toimi.<br>
   Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komentopaneeliin:<br>
-    - $cd PHPn TIEDOSTO POLKU
-    - $php -S localhost:8000
+      - $cd PHPn TIEDOSTO POLKU
+      - $php -S localhost:8000
