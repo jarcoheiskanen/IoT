@@ -205,32 +205,26 @@ Tehtiin tunnukset "Ohjelmoinnin perusteet" tehtävä sivuun ja tehtiin niitä te
 #3. DHTII -harjoitus (1,5h)
   - A)
  
-----------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------
 
-  <h3>26.9.2022</h3>
-  
-  <details>
+### 26.9.2022
+
+<details>
     <summary>
-      DHT11 Koodi
+        DHT11 Koodi
     </summary>
-  
+
     import time
     import Adafruit_DHT
     import datetime
     import mariadb
 
-
-
     sensor = Adafruit_DHT.DHT11
     pin = 4
     waitTime = 5
 
-
-
     conn = mariadb.connect(user="jaje", password="JarcoJerry1", host="localhost", database="SMarket")
     cur = conn.cursor()
-
-
 
     try:
         while True:
@@ -248,17 +242,18 @@ Tehtiin tunnukset "Ohjelmoinnin perusteet" tehtävä sivuun ja tehtiin niitä te
     except RuntimeError as error:
         print(error.args[0])
         print("Ei Toimi")
-  </details>
+    
+</details>
+
 ----------------------------------------------------------------------------------------
-  <h3>29.9.2022</h3>
-  <details>
+
+### 29.9.2022
+<details>
     <summary>
-      HTML Sivusto:
+        HTML Sivusto:
     </summary>
       <!-- Documentti tyyppi -->
       <!DOCTYPE html>
-
-
 
       <html>
 
@@ -295,11 +290,7 @@ Tehtiin tunnukset "Ohjelmoinnin perusteet" tehtävä sivuun ja tehtiin niitä te
               <img src="images/skul" alt="skull emoj" width=100 height=100><br>
               <h2 style="font-family: Courier New;">Data:</h2>
 
-
-
              <!-- PHP -->
-
-
 
              <?php
 
@@ -404,12 +395,14 @@ Tehtiin tunnukset "Ohjelmoinnin perusteet" tehtävä sivuun ja tehtiin niitä te
         </body>
 
       </html>
-  </details>
+</details>
+
+----------------------------------------------------------------------------------------
+
+### 6.10.2022
   
-  <h3>6.10.2022</h3>
-  
-  Aloitettiin azure serveri, jolla meidän database toimi.<br>
-  Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komentopaneeliin:<br>
-  
-      - $cd PHPn TIEDOSTO POLKU
-      - $php -S localhost:8000
+Aloitettiin azure serveri, jolla meidän database toimi.<br>
+Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komentopaneeliin:<br>
+
+- $cd PHPn TIEDOSTO POLKU
+- $php -S localhost:8000
