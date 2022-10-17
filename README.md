@@ -4,6 +4,7 @@
 ### Aloitetetaan IoT
 
 ![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/Testi.png)
+<img src="https://github.com/jarcoheiskanen/IoT/blob/main/Images/Testi.png" alt="drawing" width="200"/>
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
