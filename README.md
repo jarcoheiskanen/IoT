@@ -418,36 +418,36 @@ Kaikki koodi (click): [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob
     <summary>
         Tehtävät:
     </summary>
-    
-   1. Paikallinen PHP-palvelin. (localhost:8000)
-        - $cd PHPn TIEDOSTO POLKU
-        - $php -S localhost:8000
-        
-    2. Oma tietokanta Azurella.
-        - Ladattiin MySQL Workbench, ja liityttiin azuren tietokanta palvelimeen.
-        - Tehtiin tietokanta komennolla: "CREATE DATABASE tietokannan nimi;".
-        - Käynnistettiin PHP palvelin. (tehtävä 1.)
-        
-    3. Data tietokannasta HTML-taulukkoon.
-        - Tehtiin taulukko komennolla "CREATE TABLE taulukon nimi (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);".
-        - Siirrettin tietoa tietokannasta sivostoon käyttämällä PHP ja SQL komentoja koodissa. Koodin näkee linkistä tehtävien yläpuolella, index.php tiedostossa. Koodi on kommentoitu ja se kertoo mitä missäkin tapahtuu. Data näkyy taulukolla HTML sivustolla.
-        
-     4. Google chart datasta.
-        - Tehtiin pylväs taulukko google chartilla. Sen tekemiseen käytettiin javascriptiä. Koodin näkee taas linkistä yläpuolella.
-        
-     5. External tiedostot (HTML, CSS, PHP, JS)
-        - Käytin style.css tiedostoa tyylien muuttamiseen.
-        - Käytin config.php tiedostoa salasanojen tallentamiseen, että voin kutsua ne uudestaan koodissa monta kertaa ilman uudelleenkirjoitusta.
-        
-     6. Siirto raspille.
-        - Koodi toimii raspissa, salasana ja tunnus pitää vain vaihtaa, joka on tehty helpoksi config.php tiedoston avulla.
-     
-     7. Keskustelu lomake ja taulukko.
-        - Tein uuden taulukon tietokantaan nimenltä "Chat" komennolla: "CREATE TABLE Chat (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, username varchar(255), message varchar(255), aika datetime);"
-        - Keskusteluun pystyy lähettämään viestejä, niiden lähettämiseen ja niiden vastaanottoon käytin PHP ja SQL.
-        - Keskustelu näyttää vain 5 uusinta viestiä, ettei koko sivu täyty viesteillä. Viestit ovat dropdown menussa.
 
-     8. SQL Injektio.
-        - ... Ei tehty vielä.
+       1. Paikallinen PHP-palvelin. (localhost:8000)
+            - $cd PHPn TIEDOSTO POLKU
+            - $php -S localhost:8000
+
+        2. Oma tietokanta Azurella.
+            - Ladattiin MySQL Workbench, ja liityttiin azuren tietokanta palvelimeen.
+            - Tehtiin tietokanta komennolla: "CREATE DATABASE tietokannan nimi;".
+            - Käynnistettiin PHP palvelin. (tehtävä 1.)
+
+        3. Data tietokannasta HTML-taulukkoon.
+            - Tehtiin taulukko komennolla "CREATE TABLE taulukon nimi (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);".
+            - Siirrettin tietoa tietokannasta sivostoon käyttämällä PHP ja SQL komentoja koodissa. Koodin näkee linkistä tehtävien yläpuolella, index.php tiedostossa. Koodi on kommentoitu ja se kertoo mitä missäkin tapahtuu. Data näkyy taulukolla HTML sivustolla.
+
+         4. Google chart datasta.
+            - Tehtiin pylväs taulukko google chartilla. Sen tekemiseen käytettiin javascriptiä. Koodin näkee taas linkistä yläpuolella.
+
+         5. External tiedostot (HTML, CSS, PHP, JS)
+            - Käytin style.css tiedostoa tyylien muuttamiseen.
+            - Käytin config.php tiedostoa salasanojen tallentamiseen, että voin kutsua ne uudestaan koodissa monta kertaa ilman uudelleenkirjoitusta.
+
+         6. Siirto raspille.
+            - Koodi toimii raspissa, salasana ja tunnus pitää vain vaihtaa, joka on tehty helpoksi config.php tiedoston avulla.
+
+         7. Keskustelu lomake ja taulukko.
+            - Tein uuden taulukon tietokantaan nimenltä "Chat" komennolla: "CREATE TABLE Chat (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, username varchar(255), message varchar(255), aika datetime);"
+            - Keskusteluun pystyy lähettämään viestejä, niiden lähettämiseen ja niiden vastaanottoon käytin PHP ja SQL.
+            - Keskustelu näyttää vain 5 uusinta viestiä, ettei koko sivu täyty viesteillä. Viestit ovat dropdown menussa.
+
+         8. SQL Injektio.
+            - ... Ei tehty vielä.
 
 </details>
