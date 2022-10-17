@@ -413,7 +413,7 @@ Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike
 
 
 
-Koodi: [![Suunnitelma](<img src="https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon2.png" alt="drawing" width="200"/>)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
+Koodi: [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon2.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
 
 
     1. 
