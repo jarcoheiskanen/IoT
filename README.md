@@ -414,7 +414,6 @@ Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike
 Kaikki koodi (click): [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon4.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
 
 <details>
-
     <summary>
         Tehtävät:
     </summary>
