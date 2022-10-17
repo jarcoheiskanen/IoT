@@ -411,5 +411,7 @@ Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komen
 
 Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.
 
-    1. <b>a</b>
+Koodi: 
+
+    1. 
 
