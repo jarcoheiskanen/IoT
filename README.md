@@ -448,6 +448,6 @@ Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike
             - Keskustelu näyttää vain 5 uusinta viestiä, ettei koko sivu täyty viesteillä. Viestit ovat dropdown menussa.
 
          8. SQL Injektio.
-            - ... Ei tehty vielä.
+            - Lisäsin chat palstaan SQL injektio preventionin, jolla koodi varmistaa että kaikki syötettävästä koodista on stringiä.
 
 </details>
