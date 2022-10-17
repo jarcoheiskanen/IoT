@@ -413,6 +413,21 @@ Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike
 
 Kaikki koodi (click): [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon4.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
 
-
-    1. 
-
+    1. Paikallinen PHP-palvelin. (localhost:8000)
+        - $cd PHPn TIEDOSTO POLKU
+        - $php -S localhost:8000
+        
+    2. Oma tietokanta Azurella.
+        - Ladattiin MySQL Workbench, ja liityttiin azuren tietokanta palvelimeen.
+        - Tehtiin tietokanta komennolla: "CREATE DATABASE tietokannan nimi;".
+        - Käynnistettiin PHP palvelin. (tehtävä 1.)
+        
+    3. Data tietokannasta HTML-taulukkoon.
+        - Tehtiin taulukko komennolla "CREATE TABLE taulukon nimi (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);".
+        - Siirrettin tietoa tietokannasta sivostoon käyttämällä PHP ja SQL komentoja koodissa. Koodin näkee linkistä tehtävien yläpuolella, index.php tiedostossa. Koodi on kommentoitu ja se kertoo mitä missäkin tapahtuu. Data näkyy taulukolla HTML sivustolla.
+        
+     4. Google chart datasta.
+        - Tehtiin pylväs taulukko google chartilla. Sen tekemiseen käytettiin javascriptiä. Koodin näkee taas linkistä yläpuolella.
+        
+     5. External tiedostot (HTML, CSS, PHP, JS)
+        - Käytin style.css tiedostoa 
