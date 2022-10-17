@@ -23,7 +23,7 @@ Aloitettiin Raspberryn asennus, ladattiin Raspberryn asennus SD kortille, siirre
 
 ### 15.9.2022
 
-Annettiin tiedoston /var/www/html muokkaukseen lupa, ja vaihdettiin Index.html > Index.php tiedostoksi.
+Annettiin tiedoston /var/www/html muokkaukseen lupa, ja vaihdettiin Index.html > Index.php tiedostoksi.<br>
 Aloitettiin tekemään tietokantaa. Tehtiin tietokantapalvelimeen omat tietokannat (Jarco_SMarket ja Jerry_SMarket), ja molempiin omat taulukot (Jarco_Liike ja Jerry_Liike).
 
   1. Syötä terminaaliin "sudo mariadb".
