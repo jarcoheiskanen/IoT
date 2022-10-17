@@ -4,7 +4,6 @@
 ### Aloitetetaan IoT
 
 ![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/Testi.png)
-<img src="https://github.com/jarcoheiskanen/IoT/blob/main/Images/Testi.png" alt="drawing" width="200"/>
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -412,7 +411,9 @@ Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komen
 
 Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.
 
-Koodi: [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon2.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
+
+
+Koodi: [![Suunnitelma](<img src="https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon2.png" alt="drawing" width="200"/>)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
 
 
     1. 
