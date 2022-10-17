@@ -407,6 +407,8 @@ Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komen
 - $cd PHPn TIEDOSTO POLKU
 - $php -S localhost:8000
 
+----------------------------------------------------------------------------------------
+
 ### 17.10.2022 Database sivusto.
 
 Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.<br>
