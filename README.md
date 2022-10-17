@@ -411,7 +411,8 @@ Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komen
 
 Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.
 
-Koodi: [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon.png))
+Koodi: [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon.png)
+
 
     1. 
 
