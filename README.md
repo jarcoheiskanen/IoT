@@ -412,7 +412,7 @@ Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komen
 ### 17.10.2022 Database sivusto.
 
 Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.<br>
-<i>Kaikki koodi (click):</i> [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon4.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
+<u><i>Kaikki koodi (click):</i></u> [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon4.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
 
 <details>
     <summary>
