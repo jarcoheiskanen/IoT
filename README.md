@@ -23,7 +23,7 @@ Aloitettiin Raspberryn asennus, ladattiin Raspberryn asennus SD kortille, siirre
 
 ### 15.9.2022
 
-Annettiin tiedoston /var/www/html muokkaukseen lupa, ja vaihdettiin Index.html > Index.php tiedostoksi.<br>
+Annettiin tiedoston /var/www/html muokkaukseen lupa, ja vaihdettiin Index.html > Index.php tiedostoksi.
 Aloitettiin tekemään tietokantaa. Tehtiin tietokantapalvelimeen omat tietokannat (Jarco_SMarket ja Jerry_SMarket), ja molempiin omat taulukot (Jarco_Liike ja Jerry_Liike).
 
   1. Syötä terminaaliin "sudo mariadb".
@@ -409,7 +409,7 @@ Sen aloittamiseen tarvittiin MySQL Workbench ja admin tunnuksilla komennot komen
 
 ### 17.10.2022 Database sivusto.
 
-Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.
+Tehtiin sivusto, joka oli liitetty azure databaseen. Databaseen liitettiin liike taulukko, ja chat taulukko.<br>
 Kaikki koodi (click): [![Suunnitelma](https://github.com/jarcoheiskanen/IoT/blob/main/Images/folderIcon4.png)](https://github.com/jarcoheiskanen/IoT/blob/main/PHP%20Sivusto)
 
 <details>
